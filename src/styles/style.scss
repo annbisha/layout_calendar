@@ -33,9 +33,9 @@
     visibility: hidden;
   }
 
-  @for $i from 1 through 35 {
+  @for $i from ($spacer-count + 1) through ($spacer-count + 31) {
     .calendar__day:nth-child(#{$i})::before {
-      content: '#{ $i - 4 }';
+      content: '#{ $i - $spacer-count }';
     }
   }
 }
