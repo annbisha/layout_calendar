@@ -9,16 +9,15 @@
   padding: 10px;
 
   &__day {
-    width: $calendar_day_width;
-    height: $calendar_day_height;
-    background-color: $calendar_day_color;
-    border: $calendar_border;
     display: flex;
+    box-sizing: border-box;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    width: $cell-size;
+    height: $cell-size;
+    background-color: $gray-color;
+    border: $border-size solid $black-color;
+    font-size: $font-size;
     position: relative;
 
     &:hover {
