@@ -2,9 +2,12 @@
   width: $calendar_width;
   display: $calendar_display;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin: 0;
   box-sizing: border-box;
-  gap: 0;
+  gap: 1px;
+  padding: 10px;
 
   &__day {
     width: $calendar_day_width;
@@ -19,18 +22,23 @@
     padding: 0;
     position: relative;
     transition-duration: 0.5s;
-
-    &::before {
-      content: '';
-      font-size: $font-size;
-      font-family: Arial, sans-serif;
-      color: black;
-    }
   }
 
   @for $i from 1 through 31 {
-    .calendar__day:nth-child(#{$i})::before {
-      content: '#{ $i }';
+    &__day:nth-child(#{$i})::before {
+      content: '#{$i}';
+    }
+  }
+
+  @for $i from 28 through 31 {
+    &--month-length-#{$i} &__day:nth-child(n + #{$i + 1}) {
+      display: none;
+    }
+  }
+
+  @each $day, $index in $day-map {
+    &--start-day-#{$day} &__day:first-child {
+      margin-left: calc(#{$index} * (#{$cell-size} + #{$border-size}));
     }
   }
 }

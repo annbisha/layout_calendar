@@ -8,3 +8,13 @@ $calendar_border: 1px solid black;
 $calendar_day_color: #eee;
 $font-size: 30px; // Размер шрифта для цифры
 $spacer-count: 5;
+$border-size: 1px;
+$day-map: (
+  sun: 0,
+  mon: 1,
+  tue: 2,
+  wed: 3,
+  thu: 4,
+  fri: 5,
+  sat: 6,
+);
