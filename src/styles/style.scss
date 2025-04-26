@@ -19,6 +19,9 @@
     border: $border-size solid $black-color;
     font-size: $font-size;
     position: relative;
+    transition:
+      transform $transition-duration,
+      background-color $transition-duration;
 
     &:hover {
       cursor: pointer;
