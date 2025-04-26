@@ -1,4 +1,4 @@
-$calendar_width: 706px; // Ширина календаря
+$calendar_width: 726px; // Ширина календаря
 $calendar_display: flex; // Flex для расположения дней
 $cell-size: 100px; // Размер каждой ячейки
 $cell-border: 1px; // Толщина границы ячейки
@@ -11,7 +11,7 @@ $black-color: black;
 $font-size: 30px; // Размер шрифта для цифры
 $spacer-count: 5;
 $border-size: 1px;
-$gap: 1px;
+$transition-duration: 0.5s;
 $day-map: (
   sun: 0,
   mon: 1,
