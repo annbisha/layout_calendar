@@ -5,10 +5,13 @@ $cell-border: 1px; // Толщина границы ячейки
 $calendar_day_width: $cell-size;
 $calendar_day_height: $cell-size;
 $calendar_border: 1px solid black;
+$gray-color: #eee;
+$black-color: #000;
 $calendar_day_color: #eee;
 $font-size: 30px; // Размер шрифта для цифры
 $spacer-count: 5;
 $border-size: 1px;
+$transition-duration: 0.5s;
 $day-map: (
   sun: 0,
   mon: 1,
