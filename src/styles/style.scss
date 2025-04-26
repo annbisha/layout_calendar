@@ -28,13 +28,9 @@
     }
   }
 
-  .calendar__day--spacer {
-    visibility: hidden;
-  }
-
-  @for $i from ($spacer-count + 1) through ($spacer-count + 31) {
+  @for $i from 1 through 31 {
     .calendar__day:nth-child(#{$i})::before {
-      content: '#{ $i - $spacer-count }';
+      content: '#{ $i }';
     }
   }
 }
